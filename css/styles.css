@@ -43,13 +43,20 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 15%;
   color: white;
   font-size: 60px;
+  font-family: Proxima;
 }
 .title p {
   color: white;
   font-family: Gill;
   font-style: italic;
+  font-family: Proxima;
 }
 
+@media only screen and (max-width: 1060px) {
+  .title {
+    text-align: center;
+  }
+}
 .promo-tours {
   max-width: 1280px;
   min-height: 304px;
@@ -133,6 +140,7 @@ h1, h2, h3, h4, h5, h6, p {
   left: 25px;
   font-size: 40px;
   color: white;
+  font-family: Proxima;
 }
 
 .second-text {
@@ -142,6 +150,7 @@ h1, h2, h3, h4, h5, h6, p {
   left: 25px;
   font-size: 40px;
   color: white;
+  font-family: Proxima;
 }
 
 .third-text {
@@ -151,6 +160,7 @@ h1, h2, h3, h4, h5, h6, p {
   left: -5px;
   font-size: 40px;
   color: white;
+  font-family: Proxima;
 }
 
 .promo-USA {

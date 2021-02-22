@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans.ttc);
+}
+.hero {
+  max-width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.title {
+  position: absolute;
+  width: 385px;
+  height: 270px;
+  top: 25%;
+  left: 37%;
+  text-align: center;
+}
+.title h1 {
+  margin-top: 15%;
+  color: white;
+  font-size: 60px;
+}
+.title p {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+}
+
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 175px;
+  padding-right: 175px;
+  position: relative;
+}
+.promo-tours .promo {
+  height: 304px;
+  width: 236px;
+}
+.promo-tours .promo img {
+  max-height: 100%;
+  max-width: 100;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.Israel {
+  position: relative;
+}
+.Israel .button {
+  position: absolute;
+  right: 50px;
+  top: 240px;
+  width: 133px;
+  height: 40px;
+  background-color: #79ADDC;
+  border: none;
+  color: white;
+}
+.Israel .button1 {
+  border-radius: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.USA {
+  position: relative;
+}
+.USA .button {
+  position: absolute;
+  right: 50px;
+  top: 240px;
+  width: 133px;
+  height: 40px;
+  background-color: #79ADDC;
+  border: none;
+  color: white;
+}
+.USA .button2 {
+  border-radius: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.AUS {
+  position: relative;
+}
+.AUS .button {
+  position: absolute;
+  right: 50px;
+  top: 240px;
+  width: 133px;
+  height: 40px;
+  background-color: #79ADDC;
+  border: none;
+  color: white;
+}
+.AUS .button3 {
+  border-radius: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.first-text {
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  left: 25px;
+  font-size: 40px;
+  color: white;
+}
+
+.second-text {
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  left: 25px;
+  font-size: 40px;
+  color: white;
+}
+
+.third-text {
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  left: -5px;
+  font-size: 40px;
+  color: white;
+}
+
+.promo-USA {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-israel {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-AUS {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .promo-tours .promo {
+    margin-bottom: 30px;
+  }
+}
+nav {
+  max-width: 981px;
+  height: 60px;
+  margin: 0 auto;
+  border-bottom: #fff solid 2px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+}
+nav .links {
+  width: 485px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+}
+nav .links a {
+  border-right: 1px solid #79ADDC;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-decoration: none;
+  color: #fff;
+  margin: auto auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: right;
+}
+
+footer {
+  max-width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #79ADDC;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo2 {
+  padding-top: 35px;
+  padding-left: 268px;
+}
+
+.Copyright {
+  color: white;
+  padding-top: 45px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.columns-3 {
+  padding-top: 45px;
+  padding-right: 268px;
+  columns: 3;
+  list-style-type: none;
+}
+
+.facebook {
+  width: 22.46px;
+  height: 22.46px;
+  background-color: white;
+  background-image: url(../images/media-logos/facebook.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.twitter {
+  width: 22.46px;
+  height: 22.46px;
+  background-color: white;
+  background-image: url(../images/media-logos/twitter.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.instagram {
+  width: 22.46px;
+  height: 22.46px;
+  background-color: white;
+  background-image: url(../images/media-logos/instagram.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 1060px) {
+  footer {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+  }
+}
+.booking-form {
+  min-height: 890px;
+  max-width: 1290px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding-top: 61px;
+}
+.booking-form .section-title {
+  font-size: 60px;
+}
+.booking-form .name {
+  width: 858px;
+  margin: 0 auto;
+  padding-left: 5px;
+  text-align: left;
+}
+.booking-form .location {
+  width: 858px;
+  margin: 0 auto;
+  padding-left: 5px;
+  text-align: left;
+  padding-top: 20px;
+}
+.booking-form .date {
+  width: 858px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+.booking-form .people {
+  margin: 180em;
+  width: 853px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .people label {
+  padding-right: 115px;
+}
+.booking-form .message {
+  width: 858px;
+  margin: 0 auto;
+}
+.booking-form .submit {
+  position: absolute;
+  border-radius: 20px;
+  border: none;
+  background-color: #79ADDC;
+  color: white;
+  width: 133px;
+  height: 40px;
+}
+
+.user {
+  height: 58px;
+  width: 344px;
+  margin-right: 10.5px;
+  padding-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.email {
+  height: 58px;
+  width: 481px;
+  margin-left: 10.5px;
+  padding-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.country {
+  height: 58px;
+  width: 344px;
+  margin-right: 10.5px;
+  padding-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hotel {
+  height: 58px;
+  width: 481px;
+  margin-left: 10.5px;
+  padding-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Check-in {
+  height: 58px;
+  width: 698px;
+  padding-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Check-out {
+  height: 58px;
+  width: 698px;
+  padding-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.date > .Check-in-label {
+  padding-right: 89px;
+  padding-bottom: 20px;
+}
+
+.date > .Check-out-label {
+  padding-right: 81px;
+  padding-bottom: 20px;
+}
+
+.date > .Check-in {
+  align-self: right;
+}
+
+.Adult {
+  height: 58px;
+  width: 58px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Children {
+  height: 58px;
+  width: 58px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Rooms {
+  height: 58px;
+  width: 58px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#message {
+  width: 848px;
+  height: 192px;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.button-wrap {
+  padding-top: 37px;
+  padding-right: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media only screen and (max-width: 1060px) {
+  .booking-form {
+    height: 1280px;
+  }
+
+  .name {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .name .user {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-right: 17px;
+  }
+  .name .email {
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 17px;
+  }
+
+  .location {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .location .country {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-right: 15px;
+  }
+  .location .hotel {
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-right: 15px;
+  }
+
+  .people {
+    flex-direction: column;
+    width: 907px;
+  }
+  .people .Adult {
+    margin-bottom: 30px;
+    margin-right: 630px;
+  }
+  .people .Children {
+    margin-bottom: 30px;
+    margin-right: 615px;
+  }
+  .people .Rooms {
+    margin-bottom: 30px;
+    margin-right: 625px;
+  }
+
+  .Check-in {
+    width: 559px;
+  }
+
+  .Check-out {
+    width: 559px;
+  }
+
+  .button-wrap {
+    margin-bottom: 30px;
+  }
+
+  #message {
+    width: 720px;
+  }
+
+  .message {
+    padding-right: 255px;
+  }
+}

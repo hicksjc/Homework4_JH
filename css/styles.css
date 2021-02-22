@@ -15,6 +15,8 @@ h1, h2, h3, h4, h5, h6, p {
 @font-face {
   font-family: Gill;
   src: url(fonts/GillSans.ttc);
+  font-family: Proxima;
+  src: url(fonts/ProximaNovaScOsfExtraCondensed.tff);
 }
 .hero {
   max-width: 100%;
@@ -24,15 +26,15 @@ h1, h2, h3, h4, h5, h6, p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 20px;
+  padding: 20px 10px 0 10px;
   position: relative;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
 
 .title {
   position: absolute;
-  width: 385px;
-  height: 270px;
+  max-width: 385px;
+  min-height: 270px;
   top: 25%;
   left: 37%;
   text-align: center;
@@ -44,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .title p {
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
   font-style: italic;
 }
 
@@ -85,7 +87,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .Israel .button1 {
   border-radius: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
 
 .USA {
@@ -103,7 +105,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .USA .button2 {
   border-radius: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
 
 .AUS {
@@ -121,7 +123,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .AUS .button3 {
   border-radius: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
 
 .first-text {
@@ -224,29 +226,32 @@ footer {
   margin: 0 auto;
   background-color: #79ADDC;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+footer .footer-content {
+  width: 981px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-
-.logo2 {
-  padding-top: 35px;
-  padding-left: 268px;
-}
-
-.Copyright {
+footer .footer-content .Copyright {
   color: white;
   padding-top: 45px;
   padding-left: 50px;
+  padding-bottom: 45px;
   text-align: center;
 }
-
-.columns-3 {
-  padding-top: 45px;
-  padding-right: 268px;
+footer .footer-content .Copyright p {
+  text-align: center;
+  margin: 0;
+}
+footer .footer-content .columns-3 {
   columns: 3;
   list-style-type: none;
 }
-
-.facebook {
+footer .footer-content .facebook {
   width: 22.46px;
   height: 22.46px;
   background-color: white;
@@ -254,8 +259,7 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-.twitter {
+footer .footer-content .twitter {
   width: 22.46px;
   height: 22.46px;
   background-color: white;
@@ -263,8 +267,7 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-.instagram {
+footer .footer-content .instagram {
   width: 22.46px;
   height: 22.46px;
   background-color: white;
@@ -273,12 +276,6 @@ footer {
   background-size: contain;
 }
 
-@media only screen and (max-width: 1060px) {
-  footer {
-    width: 100%;
-    padding: 10px 10px 10px 10px;
-  }
-}
 .booking-form {
   min-height: 890px;
   max-width: 1290px;
@@ -335,149 +332,135 @@ footer {
   width: 133px;
   height: 40px;
 }
-
-.user {
+.booking-form .user {
   height: 58px;
   width: 344px;
   margin-right: 10.5px;
   padding-left: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-.email {
+.booking-form .email {
   height: 58px;
   width: 481px;
   margin-left: 10.5px;
   padding-left: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-.country {
+.booking-form .country {
   height: 58px;
   width: 344px;
   margin-right: 10.5px;
   padding-left: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-.hotel {
+.booking-form .hotel {
   height: 58px;
   width: 481px;
   margin-left: 10.5px;
   padding-left: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-.Check-in {
+.booking-form .Check-in {
   height: 58px;
   width: 698px;
   padding-left: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-.Check-out {
+.booking-form .Check-out {
   height: 58px;
   width: 698px;
   padding-left: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-.date > .Check-in-label {
+.booking-form .date > .Check-in-label {
   padding-right: 89px;
   padding-bottom: 20px;
 }
-
-.date > .Check-out-label {
+.booking-form .date > .Check-out-label {
   padding-right: 81px;
   padding-bottom: 20px;
 }
-
-.date > .Check-in {
+.booking-form .date > .Check-in {
   align-self: right;
 }
-
-.Adult {
+.booking-form .Adult {
   height: 58px;
   width: 58px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-.Children {
+.booking-form .Children {
   height: 58px;
   width: 58px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-.Rooms {
+.booking-form .Rooms {
   height: 58px;
   width: 58px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-#message {
+.booking-form #message {
   width: 848px;
   height: 192px;
   padding-left: 20px;
   padding-top: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
-
-.button-wrap {
+.booking-form .button-wrap {
   padding-top: 37px;
   padding-right: 100px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Gill;
 }
 
 @media only screen and (max-width: 1060px) {
   .booking-form {
     height: 1280px;
+    width: 80%;
   }
 
   .name {
     flex-direction: column;
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .name .user {
-    flex-direction: column;
+    width: 100%;
     margin-bottom: 30px;
     padding-right: 17px;
   }
   .name .email {
-    flex-direction: column;
+    width: 100%;
     margin-bottom: 30px;
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .location {
     flex-direction: column;
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .location .country {
-    flex-direction: column;
+    width: 100%;
     margin-bottom: 30px;
     padding-right: 15px;
   }
   .location .hotel {
-    flex-direction: column;
+    width: 100%;
     margin-bottom: 30px;
-    margin-right: 15px;
+    margin-left: 0px;
   }
 
   .people {
     flex-direction: column;
     width: 907px;
   }
-  .people .Adult {
+
+  .Adult {
     margin-bottom: 30px;
     margin-right: 630px;
   }
-  .people .Children {
+
+  .Children {
     margin-bottom: 30px;
     margin-right: 615px;
   }
-  .people .Rooms {
+
+  .Rooms {
     margin-bottom: 30px;
     margin-right: 625px;
   }

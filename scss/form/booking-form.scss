@@ -167,6 +167,11 @@
     .people {
         flex-direction: column;
         width: 907px;
+        .Children-label {
+            padding-right: 0px;
+            background-color: red;
+            //margin-left: 80px;
+        }
     }
     .Adult {
         margin-bottom: 30px;
@@ -176,7 +181,9 @@
     .Children {
         margin-bottom: 30px;
         margin-right: 615px;
+        
     }
+    
     .Rooms {
         margin-bottom: 30px;
         margin-right: 625px;

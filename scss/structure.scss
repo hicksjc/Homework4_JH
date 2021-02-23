@@ -3,16 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+html,
+body {
     height: 100%;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin-bottom: 16px;
 }
 
 @font-face {
     font-family: Gill;
-    src: url(fonts/GillSans.ttc);
+    src: url("fonts/GillSans.ttc");
+}
+
+@font-face {
     font-family: Proxima;
-    src: url(fonts/ProximaNovaScOsfExtraCondensed.tff);
-  }
+    src: url("fonts/ProximaNovaScOsfExtraCondensed.tff");
+}

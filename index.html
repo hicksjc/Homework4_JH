@@ -49,67 +49,67 @@
         </div>
     </section>
     <section class="booking-form">
-        <div class="booking">
-            <div class="name">
-                <h1 class="section-title">Booking form</h1>
-                <input class="user" type="text" placeholder="name...">
-                <input class="email" type="text" placeholder="email...">
+        <h1 class="section-title">Booking form</h1>
+        <div class="name row mobile">
+            <input class="user" type="text" placeholder="name...">
+            <input class="email" type="text" placeholder="email...">
+        </div>
+        <div class="location row mobile">
+            <input class="country" type="text" placeholder="country...">
+            <input class="hotel" type="text" placeholder="hotel...">
+        </div>
+        <div class="row">
+            <label for="c-in" class="Check-label">Check-in</label>
+            <input class="Check-in" type="text" placeholder="2/11/2021">
+        </div>
+        <div class="row">
+            <label for="c-out" class="Check-label">Check-out</label>
+            <input class="Check-out" type="text" placeholder="2/11/2021">
+        </div>
+        <div class="people row">
+            <div class="Adult-left">
+                <label for="Adult" class="Adult-label Label">Adult</label>
+                <select class="Adult" name="Adult" id="Adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
             </div>
-            <div class="location">
-                <input class="country" type="text" placeholder="country...">
-                <input class="hotel" type="text" placeholder="hotel...">
+            <div class="children-centered">
+                <label for="Children" class="Children-label Label">Children</label>
+                <select class="Children" name="Children" id="Children">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
             </div>
-            <div class="date">
-                <label for="c-in" class="Check-in-label">Check-in</label>
-                <input class="Check-in" type="text" placeholder="2/11/2021"><br><br>
-                <label for="c-out" class="Check-out-label">Check-out</label>
-                <input class="Check-out" type="text" placeholder="2/11/2021">
+            <div class="rooms-right">
+                <label for="Rooms" class="Rooms-label Label">Rooms</label>
+                <select class="Rooms" name="Rooms" id="Rooms">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
-            <div class="people">
-                <span class="Adult-left">
-                    <label for="Adult" class="Adult-label Label">Adult</label>
-                    <select class="Adult" name="Adult" id="Adults">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </span>
-                <span class="children-centered">
-                    <label for="Children" class="Children-label Label">Children</label>
-                    <select class="Children" name="Children" id="Children">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </span>
-                <span class="rooms-right">
-                    <label for="Rooms" class="Rooms-label Label">Rooms</label>
-                    <select class="Rooms" name="Rooms" id="Rooms">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </span>
-            </div>
-            <div class="message">
-                <textarea name="Message" id="message" cols="60" rows="10" placeholder="message..."></textarea>
-            </div>
+        </div>
+        <div class="message">
+            <textarea name="Message" id="message" cols="60" rows="10" placeholder="message..."></textarea>
         </div>
         <div class="button-wrap">
             <button class="submit">SUBMIT</button>

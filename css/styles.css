@@ -167,7 +167,7 @@ p {
   position: absolute;
   text-align: center;
   top: 40px;
-  left: 5.5px;
+  left: 10px;
   font-size: 35px;
   color: white;
   font-family: Proxima;
@@ -394,7 +394,7 @@ footer .footer-content .instagram {
   border: none;
   background-color: #79ADDC;
   color: white;
-  width: 95%;
+  width: 100%;
   height: 40px;
   font-family: Gill;
 }

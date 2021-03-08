@@ -239,6 +239,10 @@ nav .links a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: right;
 }
+nav .links a:last-child {
+  border: none;
+  padding-right: 0px;
+}
 
 footer {
   max-width: 100%;
